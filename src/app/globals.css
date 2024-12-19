@@ -1,6 +1,10 @@
+
+@import 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* styles/globals.css */
 
 :root {
   --background: #ffffff;
@@ -17,5 +21,22 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Playfair Display", serif;
+}
+ .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-200 rounded-full opacity-85 space-x-1 !important;
+}
+
+ .swiper-pagination-bullet-active {
+  @apply bg-customGreen  !important;
+}
+
+
+.on-the-farm-content p {
+  @apply text-base font-light text-themeTextBlack font-ubanTu leading-[140%] mb-3 whitespace-break-spaces
+}
+
+.a-year-farm-content h6 {
+  @apply text-sm uppercase font-normal leading-normal mb-2 text-themeTextBlack font-workSans
 }
