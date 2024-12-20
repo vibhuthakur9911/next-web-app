@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function AboutSec() {
   return (
     <>
-      <section className="pt-14 pb-48">
+      <section className="pt-14 pb-40">
         <div className="container mx-auto  on-the-farm-content">
           <div className="max-w-[936px] mx-auto w-full">
             <Heading text="Explore East Devon" className="pb-8" />
@@ -31,44 +31,50 @@ export default function AboutSec() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[7px]">
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      Jurassic Coast
+                      <Link href="/"> Jurassic Coast </Link>
                     </span>
                   </div>
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      Axe Wildlife park
+                      <Link href="/"> Axe Wildlife park</Link>
                     </span>
                   </div>
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      seaton tramway
+                      <Link href="/"> seaton tramway </Link>
                     </span>
                   </div>
                 </div>
@@ -118,44 +124,53 @@ export default function AboutSec() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[7px]">
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      Blackdown Hills
+                      <Link href="/"> Blackdown Hills</Link>
                     </span>
                   </div>
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      Dartmoor national park
+                      <Link href="https://www.dartmoor.gov.uk/" target="_blank">
+                        {" "}
+                        Dartmoor national park
+                      </Link>
                     </span>
                   </div>
                   <div className="">
                     <div className="relative w-full h-[208px]">
-                      <Image
-                        src="/img/east-devon.jpeg"
-                        alt=""
-                        objectFit="cover"
-                        layout="fill"
-                        className="w-full shadow-lg shadow-[#ac8f738f] "
-                      />
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
                     </div>
                     <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
-                      Burrow farm gardens
+                      <Link href="/">Burrow farm gardens</Link>
                     </span>
                   </div>
                 </div>
@@ -167,7 +182,11 @@ export default function AboutSec() {
                 />
                 <p>
                   Classified as an Area of Outstanding Natural Beauty, the 
-                  <Link href="/" className="underline">
+                  <Link
+                    href="https://blackdownhillsaonb.org.uk/"
+                    className="underline"
+                    target="_blank"
+                  >
                     Blackdown Hills
                   </Link>
                    are unmissable. It’s a good job Hawley Farm is located within
@@ -184,7 +203,11 @@ export default function AboutSec() {
                   className=" text-darkCustomGreen mb-4"
                 />
                 <p>
-                  <Link href="/" className="underline">
+                  <Link
+                    href="https://www.dartmoor.gov.uk/"
+                    className="underline"
+                    target="_blank"
+                  >
                     Dartmoor National 
                   </Link>
                   is nearby and a fantastic day out for all. You can delve into
@@ -231,7 +254,7 @@ export default function AboutSec() {
                   many that open up for the National Garden Scheme, it is really
                   worth going as they may only open for a few days in the year
                   when they are at their best, all the money goes to good
-                  charities 
+                  charities
                 </p>
               </div>
               <div className="mt-10">
@@ -239,10 +262,121 @@ export default function AboutSec() {
                   text="Dark Skies"
                   className=" text-darkCustomGreen mb-4"
                 />
-                <p>
-                  Enter Text
-                 </p>
+                <p>Enter Text</p>
               </div>
+            </div>
+            <div className="tours mt-10 ">
+              <SecondoryHeading
+                text="Towns/Cultural experiences"
+                className="mb-6"
+              />
+              <div className="bg-[#F6EDE4] px-5 py-4 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[7px]">
+                  <div className="">
+                    <div className="relative w-full h-[208px]">
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
+                    </div>
+                    <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
+                      <Link href="/"> dalwood</Link>
+                    </span>
+                  </div>
+                  <div className="">
+                    <div className="relative w-full h-[208px]">
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
+                    </div>
+                    <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
+                      <Link href="/" target="_blank">
+                        {" "}
+                        lyme bay winery
+                      </Link>
+                    </span>
+                  </div>
+                  <div className="">
+                    <div className="relative w-full h-[208px]">
+                      <Link href="/">
+                        <Image
+                          src="/img/east-devon.jpeg"
+                          alt=""
+                          objectFit="cover"
+                          layout="fill"
+                          className="w-full shadow-lg shadow-[#ac8f738f] "
+                        />
+                      </Link>
+                    </div>
+                    <span className="text-sm font-workSans uppercase text-themeTextBlack block text-right mt-5">
+                      <Link href="/">ford abbey</Link>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <SubHeading
+                  text="Dalwood"
+                  className=" text-darkCustomGreen mb-4"
+                />
+                <p>
+                  Dalwood is the closest village to Hawley Farm and guests can
+                  benefit massively from the friendly community and local
+                  amenities.
+                </p>
+
+                <p>
+                  St. Peter’s church is worth a visit for a look at its stained
+                  glass windows and religious architecture.
+                </p>
+                <p>
+                  Head to The 
+                  <Link
+                    href="https://whatpub.com/pubs/EXE/105/tuckers-arms-dalwood/"
+                    className="underline"
+                    target="_blank"
+                  >
+                    Tucker’s Arms
+                  </Link>
+                  , one of the oldest buildings in Dalwood, for homely food and
+                  local real ales.
+                </p>
+                <p>You can find out what’s happening in Dalwood on their {" "}
+                  <Link href="/" className="underline" target="_blank">
+                    website.
+                  </Link>
+                </p>
+              </div>
+              <div className="my-10">
+                <SubHeading
+                  text="Winery"
+                  className=" text-darkCustomGreen mb-4"
+                />
+                <p>Lyme Bay Winery is the home of LBW Drinks. Our small, dedicated drinks company is full of people who are passionate about producing delicious and award-winning English Wine, Fruit Wine, Mead, Liqueurs and Spirits from our home in Devon’s beautiful Axe Valley.</p>
+                <p>Here we combine our knowledge and love of flavours and ingredients with our wine-making skills to craft award-winning traditional drinks, tailored to the 21st-century palate Each of these amazing products is fermented, blended and aged, as appropriate, right here at the Winery under the supervision of our experienced team.</p>
+              </div>
+              <div className="mt-10">
+                <SubHeading
+                  text="Ford Abbey & Gardens"
+                  className=" text-darkCustomGreen mb-4"
+                />
+                <p>
+                Ford Abbey and Gardens are just over the border into Dorset, but only 30 minutes from Hawley farm holiday cottages, founded by monks 800 years ago. Thirty acres of all year round interest. From 1st March, the fountain is on three times a day, 12noon, 1.30 and 3pm. A working kitchen garden, spring bulbs, herbaceous borders along the canal, a bog garden and arboretum. Good autumn colours.
+                </p>
+                <p>A plant Nursery and a food and gift shop. Dog friendly on leads and mobility scooters for hire if booked. The House and Gardens are open all days except Mondays and Saturdays from 10am. to 5.30 <Link href="mailto:info@fordabbey.co.uk" className="underline">info@fordabbey.co.uk</Link> tel no. 01460221290 postcode TA204LU</p>
+              </div>
+             
             </div>
           </div>
         </div>

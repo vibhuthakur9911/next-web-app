@@ -143,15 +143,15 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/things-to-do/suites"
-                    className="block px-4 py-2"
+                    href="/things-to-do/what-if-its-rain"
+                    className="block px-4 py-2  border-b  border-solid border-white"
                   >
                     What if it rains?
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/things-to-do/suites"
+                    href="/things-to-do/walk-from-the-farm"
                     className="block px-4 py-2"
                   >
                     Walks from the farm
@@ -163,10 +163,10 @@ const Navbar = () => {
               <Link href="/things-to-do">Things to do</Link>
             </li> */}
             <li>
-              <Link href="/availability">Availability & Booking</Link>
+              <Link href="/availability-booking">Availability & Booking</Link>
             </li>
             <li>
-              <Link href="/guest-info">Guest Info / FAQs</Link>
+              <Link href="/faq">Guest Info / FAQs</Link>
             </li>
             <li>
               <Link href="/guest-info">Contact us</Link>

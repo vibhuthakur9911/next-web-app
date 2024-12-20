@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function AboutSec() {
   return (
     <>
-      <section className="pt-14 pb-48">
+      <section className="pt-14 pb-48 border-t-[3.5px]  border-solid border-customGreen">
         <div className="container mx-auto  on-the-farm-content">
           <div className="max-w-[936px] mx-auto w-full">
             <Heading text="On the farm" className="pb-8" />

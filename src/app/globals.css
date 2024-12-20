@@ -1,5 +1,4 @@
-
-@import 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,6 +34,10 @@ body {
 
 .on-the-farm-content p {
   @apply text-base font-light text-themeTextBlack font-ubanTu leading-[140%] mb-3 whitespace-break-spaces
+}
+
+.theme-list li {
+  @apply text-base font-light text-themeTextBlack font-ubanTu leading-[140%]   
 }
 
 .a-year-farm-content h6 {
